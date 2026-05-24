@@ -65,7 +65,7 @@ jobs:
           ./scripts/feeds install -a
 
       - name: Generate configuration file
-        run: make defconfig
+        run: make config
 
       - name: Download packages
         run: make download -j16
